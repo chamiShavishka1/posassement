@@ -1,4 +1,4 @@
-package com.example.possystemspring;
+package com.example.possystemspring.config;
 
 import jakarta.persistence.EntityManagerFactory;
 import org.modelmapper.ModelMapper;
@@ -21,7 +21,7 @@ public class WebAppRootConfig {
     public DataSource dataSource() {
         var dbms = new DriverManagerDataSource();
         dbms.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dbms.setUrl("jdbc:mysql://localhost:3306/pos_javaee?createDatabaseIfNotExist=true");
+        dbms.setUrl("jdbc:mysql://localhost:3306/pos_project?createDatabaseIfNotExist=true");
         dbms.setUsername("root");
         dbms.setPassword("Ijse@1234");
         return dbms;

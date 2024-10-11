@@ -1,4 +1,4 @@
-package com.example.possystemspring;
+package com.example.possystemspring.config;
 
 import jakarta.servlet.annotation.MultipartConfig;
 import org.springframework.context.annotation.ComponentScan;
