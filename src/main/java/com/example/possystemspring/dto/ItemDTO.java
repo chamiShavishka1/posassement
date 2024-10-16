@@ -3,13 +3,14 @@ package com.example.possystemspring.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.example.possystemspring.customObj.ItemResponse;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ItemDTO implements SuperDTO {
-    private String id;
-    private String name;
+@Data
+public class ItemDTO implements SuperDTO, ItemResponse {
+    private String code;
     private String description;
-    private Double unit_price;
+    private double price;
+    private int qty;
 }

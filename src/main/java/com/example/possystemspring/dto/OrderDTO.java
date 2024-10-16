@@ -6,13 +6,17 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderDTO  implements SuperDTO{
-    private String oId;
-    private String date;
-    private double total;
+@Data
+public class OrderDTO implements SuperDTO {
+    private String orderId;
     private String customerId;
-    private List<OrderDetailsDTO> orderDetails;
+    private String orderDate;
+    private double total;
+    private double discount;
+    private double subTotal;
+    private double cash;
+    private double balance;
+    private List<OrderDetailDTO> orderDetails;
 }

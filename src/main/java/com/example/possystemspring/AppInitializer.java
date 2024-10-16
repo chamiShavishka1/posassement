@@ -1,14 +1,15 @@
 package com.example.possystemspring;
 
-import com.example.possystemspring.config.WebAppConfig;
 import jakarta.servlet.MultipartConfigElement;
 import jakarta.servlet.ServletRegistration;
+import com.example.possystemspring.config.WebAppConfig;
+import com.example.possystemspring.config.WebAppRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{WebAppConfig.class};
+        return new Class[]{WebAppRootConfig.class};
     }
 
     @Override

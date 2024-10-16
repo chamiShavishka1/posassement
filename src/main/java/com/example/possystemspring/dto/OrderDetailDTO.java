@@ -4,15 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderDetailsDTO implements SuperDTO{
-    private String itemId;
-    private String itemName;
-    private String itemDescription;
-    private int qty;
+@Data
+public class OrderDetailDTO implements SuperDTO {
+    private String itemCode;
     private double unitPrice;
-    private double total;
-
+    private int quantity;
+    private double totalPrice;
 }
