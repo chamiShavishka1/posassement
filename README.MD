@@ -56,8 +56,9 @@ This application follows a well-organized, layered architecture:
 
 ## License
 
-### [MIT](https://github.com/sandeeparavindi/Spring-WEB-POS-System/edit/master/License.txt) License
+### [MIT](https://github.com/chamishavishka/POS-System-Spring/edit/master/License.txt) License
 
 ## Copyright
 
 Copyright (c) 2024 CHAMI SHAVISHKA. All rights reserved.
+
